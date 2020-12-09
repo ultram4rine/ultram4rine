@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+	email = ultramarine730@gmail.com
+	name = ultram4rine
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[core]
+	editor = nano
+
+[credential]
+	helper = /usr/local/bin/git-credential-manager-core
+	credentialStore = gpg
+
+[credential "https://git.sgu.ru"]
+	username = ultramarine
+[filesystem "Oracle Corporation|13.0.1|-468779514"]
+	timestampResolution = 1022 microseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|1.8.0_251|-468779514"]
+	timestampResolution = 1001 microseconds
+	minRacyThreshold = 0 nanoseconds
+[credential "https://dev.azure.com"]
+	useHttpPath = true
