@@ -88,4 +88,4 @@ load-nvmrc
 
 export GPG_TTY=$TTY
 export GOPATH="$HOME/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/protoc/bin"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/protoc/bin:$HOME/.config/yarn/global/node_modules/.bin"
