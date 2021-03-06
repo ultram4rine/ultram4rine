@@ -41,18 +41,18 @@ zinit wait lucid light-mode for \
       has"git" \
         OMZP::git \
       has"go" \
-	OMZP::golang \
+        OMZP::golang \
       has"nvm" \
-	OMZP::nvm \
+        OMZP::nvm \
       has"npm" \
-	OMZP::npm \
+        OMZP::npm \
       has"sbt" \
-	OMZP::sbt \
+        OMZP::sbt \
       has"yarn" \
-	OMZP::yarn \
+        OMZP::yarn \
       as"completion" \
-	OMZP::cargo/_cargo \
-	OMZP::rustup/_rustup \
+        OMZP::cargo/_cargo \
+        OMZP::rustup/_rustup \
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
