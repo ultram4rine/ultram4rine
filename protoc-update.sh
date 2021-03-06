@@ -6,14 +6,12 @@ download() {
 
     read -p "Remove protoc-$1-linux-x86_64.zip? [y/n] " -n 1 -r
     echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
         rm protoc-$1-linux-x86_64.zip
     fi
 }
 
-if [[ $1 != "" ]]
-then
+if [[ $1 != "" ]]; then
     download $1
 else
     version=$(curl --silent "https://api.github.com/repos/protocolbuffers/protobuf/releases/latest" |
