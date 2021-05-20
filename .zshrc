@@ -108,6 +108,10 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+fast-theme sv-plant
+
+export GCM_CREDENTIAL_STORE=gpg
 export GPG_TTY=$TTY
+export GOROOT=/usr/local/go
 export GOPATH="$HOME/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/protoc/bin:$HOME/.config/yarn/global/node_modules/.bin"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/protoc/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin"
