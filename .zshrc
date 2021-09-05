@@ -114,4 +114,10 @@ export GCM_CREDENTIAL_STORE=gpg
 export GPG_TTY=$TTY
 export GOROOT=/usr/local/go
 export GOPATH="$HOME/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/protoc/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:/usr/local/scala/bin"
+
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/protoc/bin"
+export PATH="$PATH:$HOME/protolint"
+export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+export PATH="$PATH:$HOME/.local/bin:/usr/local/scala/bin"
