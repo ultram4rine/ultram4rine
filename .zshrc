@@ -114,6 +114,7 @@ export GCM_CREDENTIAL_STORE=gpg
 export GPG_TTY=$TTY
 export GOROOT=/usr/local/go
 export GOPATH="$HOME/go"
+export GOPRIVATE="*.sgu.ru"
 
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOPATH/bin"
