@@ -108,7 +108,7 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-fast-theme free
+# fast-theme free
 
 export GCM_CREDENTIAL_STORE=gpg
 export GPG_TTY=$TTY
