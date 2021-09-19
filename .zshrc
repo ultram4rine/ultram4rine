@@ -72,9 +72,12 @@ zinit wait lucid light-mode for \
         OMZP::sbt \
       has"yarn" \
         OMZP::yarn \
+      has"cargo" \
+        OMZP::rustup \
+        OMZP::cargo \
+      has"rustc" \
       as"completion" \
-        OMZP::cargo/_cargo \
-        OMZP::rustup/_rustup \
+        OMZP::rust/_rust \
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
