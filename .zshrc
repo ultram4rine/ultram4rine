@@ -78,6 +78,9 @@ zinit wait lucid light-mode for \
       has"rustc" \
       as"completion" \
         OMZP::rust/_rust \
+      has"docker" \
+      as"completion" \
+        OMZP::docker/_docker \
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
