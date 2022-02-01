@@ -108,8 +108,12 @@ load-nvmrc() {
     nvm use default
   fi
 }
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+
+if command -v nvm &> /dev/null
+then
+    add-zsh-hook chpwd load-nvmrc
+    load-nvmrc
+fi
 
 # fast-theme free
 
